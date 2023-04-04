@@ -110,3 +110,9 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.accordion {
+  padding: 10px;
+  transition: padding 0.3s ease-in-out;
+}
