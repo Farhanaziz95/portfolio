@@ -17,7 +17,7 @@ export default function DarkMode() {
 
     return (
         <motion.button
-            className="fixed top-0 right-0 my-4 mr-4 w-12 h-12 dark:bg-gray-800 bg-indigo-600 rounded-full flex items-center justify-center opacity-80 hover:opacity-100"
+            className="z-10 fixed top-0 right-0 my-4 mr-4 w-12 h-12 dark:bg-gray-800 bg-indigo-600 rounded-full flex items-center justify-center opacity-80 hover:opacity-100"
             whileHover={{ scale: 1.1 }}
             onClick={handleToggleDarkMode}
         >

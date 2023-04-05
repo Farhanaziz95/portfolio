@@ -70,7 +70,7 @@ const buttons = [
 
 export default function NavBar() {
     return (
-        <div className='fixed flex flex-col right-0 top-1/4'>
+        <div className='z-10 fixed flex flex-col right-0 top-1/4'>
             {buttons.map((button, index) => (
                 <Button key={index} href={button.href} icon={button.icon} />
             ))}

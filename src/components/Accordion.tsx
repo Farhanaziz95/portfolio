@@ -1,5 +1,6 @@
 'use client'
 
+import {FaCode, FaCodeBranch, FaCodepen, FaDatabase} from 'react-icons/fa'
 import React, { useState } from 'react';
 import { Variants, motion } from "framer-motion"
 
@@ -12,7 +13,7 @@ type InnerListItem = {
 type AccordionItem = {
     title: string;
     subtitle: string;
-    iconUrl: string; // new property to hold URL of icon image
+    iconUrl: React.ReactNode; // new property to hold URL of icon image
     innerlist: InnerListItem[];
 };
 
@@ -53,7 +54,8 @@ const Accordion: React.FC<AccordionProps> = ({ item }) => {
                 onClick={toggleAccordion}
             >
                 <div className="flex items-center">
-                    <img src={item.iconUrl} alt="icon" className="h-6 w-6 mr-2" />
+                    {/* <img src={item.iconUrl} alt="icon" className="h-6 w-6 mr-2" /> */}
+                    {item.iconUrl}
                     <div>
                         <h3 className="dark:text-white text-black font-bold">{item.title}</h3>
                         <p className='dark:text-white text-black'>{item.subtitle}</p>
@@ -99,7 +101,7 @@ export default function AccordionList() {
         {
             title: 'Programming Languages',
             subtitle: 'Experience of Some Title',
-            iconUrl: 'https://via.placeholder.com/30', // example URL for placeholder image
+            iconUrl: <FaCode/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -131,7 +133,7 @@ export default function AccordionList() {
         {
             title: 'Database',
             subtitle: 'Experience of Another Title',
-            iconUrl: 'https://via.placeholder.com/30', // example URL for placeholder image
+            iconUrl: <FaDatabase/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -164,7 +166,7 @@ export default function AccordionList() {
         {
             title: 'Front End',
             subtitle: 'Experience of Another Title',
-            iconUrl: 'https://via.placeholder.com/30', // example URL for placeholder image
+            iconUrl: <FaCodepen/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -178,7 +180,7 @@ export default function AccordionList() {
                 },
                 {
                     id: 1,
-                    innertitle: 'Tailwind Css',
+                    innertitle: 'Tailwind CSS',
                     progress: 0
                 },
                 {
@@ -192,7 +194,7 @@ export default function AccordionList() {
         {
             title: 'Back End',
             subtitle: 'Experience of Another Title',
-            iconUrl: 'https://via.placeholder.com/30', // example URL for placeholder image
+            iconUrl: <FaCodeBranch/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
