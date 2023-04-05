@@ -5,7 +5,7 @@ import HeroSection from '@/components/HeroSectionaffi'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/navaffi'
-import Social from '@/components/Social'
+import Social from '@/components/Socialaffi'
 import styles from './page.module.css'
 const inter = Inter({ subsets: ['latin'] })
 

@@ -20,7 +20,7 @@ const Button = ({ href, icon }:ButtonProps) => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black text-2xl dark:text-white my-1 mr-4 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center opacity-80 hover:opacity-100"
+                className="text-black text-2xl dark:text-white my-1 mr-4 w-12 h-12 dark:bg-purple-800 bg-pink-600 rounded-full flex items-center justify-center opacity-100 hover:opacity-80"
                 whileHover={{ scale: 1.2 }}
             >
                 {icon}

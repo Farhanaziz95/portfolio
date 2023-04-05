@@ -116,3 +116,7 @@ a {
   padding: 10px;
   transition: padding 0.3s ease-in-out;
 }
+
+.glassicon {
+  @apply dark:bg-purple-800 dark:bg-opacity-[46%] bg-pink-600  bg-opacity-[46%] shadow-xl border-[2px] border-l-0 border-white border-opacity-10 backdrop-filter backdrop-blur-lg
+}

@@ -2,28 +2,46 @@ import Link from 'next/link';
 import React from 'react'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
+interface Icon {
+  icon: JSX.Element;
+  title: string;
+  href: string;
+  top: string;
+}
+
 export default function Social() {
+
+  const icons: Icon[] = [
+    {
+      icon: <FaFacebookSquare size={"30px"} color={"#f3f4f6"} />,
+      title: 'Facebook',
+      href: 'https://www.facebook.com/',
+      top: '40vh'
+    },
+    {
+      icon: <FaLinkedin size={"30px"} color={"#f3f4f6"} />,
+      title: 'LinkedIn',
+      href: 'https://www.linkedin.com/',
+      top: '50vh'
+    },
+    {
+      icon: <FaTwitterSquare size={"30px"} color={"#f3f4f6"} />,
+      title: 'Twitter',
+      href: 'https://twitter.com/',
+      top: '60vh'
+    },
+  ];
+
   return (
     <div className='max-lg:hidden'>
-      <Link href={"https://www.facebook.com/"} target='_blank'>
-        <div className='ml-[-120px] hover:ml-0 duration-300 cursor-pointer flex justify-between items-center w-[175px] glassicon rounded-r-xl fixed py-3 px-4 z-10 top-[40vh]'>
-          <h6 className=''>Facebook</h6>
-          <FaFacebookSquare size={"30px"} color={"#f3f4f6"}></FaFacebookSquare>
-        </div>
-      </Link>
-      <Link href={"https://www.linkedin.com/"} target='_blank'>
-        <div className='ml-[-120px] hover:ml-0 duration-300 cursor-pointer flex justify-between items-center w-[175px] glassicon rounded-r-xl fixed py-3 px-4 z-10 top-[50vh]'>
-          <h6>Linkedin</h6>
-          <FaLinkedin size={"30px"} color={"#f3f4f6"}></FaLinkedin>
-        </div>
-      </Link>
-
-      <Link href={"https://twitter.com/"} target='_blank'>
-        <div className='ml-[-120px] hover:ml-0 duration-300 cursor-pointer flex justify-between items-center w-[175px] glassicon rounded-r-xl fixed py-3 px-4 z-10 top-[60vh]'>
-          <h6>Twitter</h6>
-          <FaTwitterSquare size={"30px"} color={"#f3f4f6"}></FaTwitterSquare>
-        </div>
-      </Link>
+      {icons.map((icon, index) => (
+        <Link href={icon.href} key={index}>
+          <div className='ml-[-120px] hover:ml-0 duration-300 cursor-pointer flex justify-between items-center w-[175px] glassicon rounded-r-xl fixed py-3 px-4 z-10 ' style={{ top: icon.top }}>
+            <h6>{icon.title}</h6>
+            {icon.icon}
+          </div>
+        </Link>
+      ))}
     </div>
   )
 }

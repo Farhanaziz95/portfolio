@@ -17,11 +17,11 @@ export default function DarkMode() {
 
     return (
         <motion.button
-            className="z-10 fixed top-0 right-0 my-4 mr-4 w-12 h-12 dark:bg-gray-800 bg-indigo-600 rounded-full flex items-center justify-center opacity-80 hover:opacity-100"
+            className="z-10 fixed top-0 right-0 my-4 mr-4 w-12 h-12 dark:bg-purple-800 bg-pink-600 rounded-full flex items-center justify-center opacity-100 hover:opacity-80"
             whileHover={{ scale: 1.1 }}
             onClick={handleToggleDarkMode}
         >
-            {isDarkModeEnabled ? <FaSun className='text-yellow-700' /> : <FaMoon className='text-white'/>}
+            {isDarkModeEnabled ? <FaSun className='text-white' /> : <FaMoon className='text-black'/>}
         </motion.button>
     );
 }
