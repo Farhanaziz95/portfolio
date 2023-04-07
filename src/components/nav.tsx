@@ -18,8 +18,8 @@ const Button = ({ href, icon }:ButtonProps) => {
         
             <motion.a
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className="text-black text-2xl dark:text-white my-1 mr-4 w-12 h-12 dark:bg-purple-800 bg-pink-600 rounded-full flex items-center justify-center opacity-100 hover:opacity-80"
                 whileHover={{ scale: 1.2 }}
             >
@@ -31,19 +31,19 @@ const Button = ({ href, icon }:ButtonProps) => {
 
 const buttons = [
     {
-        href: "https://twitter.com/",
+        href: "#HeroSection",
         icon: (
             <FaHome className=''/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#AboutSection",
         icon: (
             <FaInfoCircle/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#SkillSection",
         icon: (
             <FaLaptopCode/>
         ),
@@ -61,7 +61,7 @@ const buttons = [
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#ContantSection",
         icon: (
             <FaHandsHelping/>
         ),
@@ -70,7 +70,7 @@ const buttons = [
 
 export default function NavBar() {
     return (
-        <div className='z-10 fixed flex flex-col right-0 top-1/4'>
+        <div className='max-md:hidden z-10 fixed flex flex-col right-0 top-1/4'>
             {buttons.map((button, index) => (
                 <Button key={index} href={button.href} icon={button.icon} />
             ))}

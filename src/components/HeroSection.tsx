@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
     
     return (
-        <section style={{ backgroundImage: 'url(/bghero.jpg)' }} className=" bg-cover bg-center bg-no-repeat bg-fixed dark:invert dark:bg-gray-900">
+        <section id='HeroSection' style={{ backgroundImage: 'url(/bghero.jpg)' }} className=" bg-cover bg-center bg-no-repeat bg-fixed dark:invert dark:bg-gray-900">
             <div className=" dark:invert grid max-w-screen-xl px-20 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
                     <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Hi, I'm <br/><span className='text-pink-600 dark:text-purple-800'> Farhan Aziz Umrani</span> <TypedComponent /> </h1>

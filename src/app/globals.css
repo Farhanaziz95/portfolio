@@ -120,3 +120,7 @@ a {
 .glassicon {
   @apply dark:bg-purple-800 dark:bg-opacity-[46%] bg-pink-600  bg-opacity-[46%] shadow-xl border-[2px] border-l-0 border-white border-opacity-10 backdrop-filter backdrop-blur-lg
 }
+
+html {
+  scroll-behavior: smooth;
+}

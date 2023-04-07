@@ -1,6 +1,6 @@
 'use client'
 
-import {FaCode, FaCodeBranch, FaCodepen, FaDatabase} from 'react-icons/fa'
+import { FaCode, FaCodeBranch, FaCodepen, FaDatabase } from 'react-icons/fa'
 import React, { useState } from 'react';
 import { Variants, motion } from "framer-motion"
 
@@ -83,9 +83,9 @@ const Accordion: React.FC<AccordionProps> = ({ item }) => {
                                 {item.progress}%
                             </span>
                         </h4>
-                        <div className="bg-gray-300 dark:bg-slate-700 h-2 w-full rounded-full">
+                        <div className="bg-gray-300 dark:bg-slate-500 h-2 w-full rounded-full">
                             <div
-                                className="dark:bg-slate-900 bg-blue-500 h-2 rounded-full"
+                                className="dark:bg-purple-800 bg-pink-600 h-2 rounded-full"
                                 style={{ width: `${item.progress}%` }}
                             ></div>
                         </div>
@@ -101,7 +101,7 @@ export default function AccordionList() {
         {
             title: 'Programming Languages',
             subtitle: 'Experience of Some Title',
-            iconUrl: <FaCode/>, // example URL for placeholder image
+            iconUrl: <FaCode  className='mr-5 text-2xl dark:text-purple-800 text-pink-600'/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -133,7 +133,7 @@ export default function AccordionList() {
         {
             title: 'Database',
             subtitle: 'Experience of Another Title',
-            iconUrl: <FaDatabase/>, // example URL for placeholder image
+            iconUrl: <FaDatabase  className='mr-5 text-2xl dark:text-purple-800 text-pink-600'/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -166,7 +166,7 @@ export default function AccordionList() {
         {
             title: 'Front End',
             subtitle: 'Experience of Another Title',
-            iconUrl: <FaCodepen/>, // example URL for placeholder image
+            iconUrl: <FaCodepen  className='mr-5 text-2xl dark:text-purple-800 text-pink-600'/>, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -194,7 +194,7 @@ export default function AccordionList() {
         {
             title: 'Back End',
             subtitle: 'Experience of Another Title',
-            iconUrl: <FaCodeBranch/>, // example URL for placeholder image
+            iconUrl: <FaCodeBranch className='mr-5 text-2xl dark:text-purple-800 text-pink-600' />, // example URL for placeholder image
             innerlist: [
                 {
                     id: 1,
@@ -221,16 +221,23 @@ export default function AccordionList() {
     ];
 
     return (
-        <div className='h-screen  dark:bg-gray-700  '>
-            <div className="w-full dark:bg-gray-700  p-14 justify-items-center grid grid-cols-1 sm:grid-cols-2">
-                {AccordList.map(item => (
-                    <Accordion
-                        item={item}
-                        key={item.title}
-                    />
-                ))}
+        <>
+
+            <div id='SkillSection' className='h-max  dark:bg-gray-700  '>
+                <div className="pt-8 text-center mx-auto max-w-full lg:mx-0">
+                    <h2 className="text-3xl font-bold tracking-tight dark:text-white text-gray-900 sm:text-4xl">Skills</h2>
+                    <p className="mt-2 text-lg leading-8 dark:text-gray-400 text-gray-500">See My Expertise in various technologys to grow your business</p>
+                </div>
+                <div className="w-full dark:bg-gray-700   pb-14 px-14 justify-items-center grid grid-cols-1 sm:grid-cols-2">
+                    {AccordList.map(item => (
+                        <Accordion
+                            item={item}
+                            key={item.title}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

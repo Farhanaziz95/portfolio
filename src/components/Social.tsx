@@ -13,19 +13,19 @@ export default function Social() {
 
   const icons: Icon[] = [
     {
-      icon: <FaFacebookSquare size={"30px"} color={"#f3f4f6"} />,
+      icon: <FaFacebookSquare size={"30px"} className='dark:text-white text-black' />,
       title: 'Facebook',
       href: 'https://www.facebook.com/',
       top: '40vh'
     },
     {
-      icon: <FaLinkedin size={"30px"} color={"#f3f4f6"} />,
+      icon: <FaLinkedin size={"30px"}  className='dark:text-white text-black' />,
       title: 'LinkedIn',
       href: 'https://www.linkedin.com/',
       top: '50vh'
     },
     {
-      icon: <FaTwitterSquare size={"30px"} color={"#f3f4f6"} />,
+      icon: <FaTwitterSquare className='dark:text-white text-black' size={"30px"}  />,
       title: 'Twitter',
       href: 'https://twitter.com/',
       top: '60vh'
@@ -37,7 +37,7 @@ export default function Social() {
       {icons.map((icon, index) => (
         <Link href={icon.href} key={index}>
           <div className='ml-[-120px] hover:ml-0 duration-300 cursor-pointer flex justify-between items-center w-[175px] glassicon rounded-r-xl fixed py-3 px-4 z-10 ' style={{ top: icon.top }}>
-            <h6>{icon.title}</h6>
+            <h6 className='text-xl font-bold text-black dark:text-white'>{icon.title}</h6>
             {icon.icon}
           </div>
         </Link>
