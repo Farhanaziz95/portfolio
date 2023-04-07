@@ -10,6 +10,8 @@ import HamburgerMenu from '@/components/mobilenavaffi'
 import Aboutme from '@/components/aboutaffi'
 import styles from './page.module.css'
 import ContactUs from '@/components/contantaffi'
+import Portfolio from '@/components/portfolioaffi'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -23,6 +25,7 @@ export default function Home() {
       <HeroSection/>
       <Aboutme/>
       <AccordionList />
+      <Portfolio/>
       <ContactUs/>
 
     </>
