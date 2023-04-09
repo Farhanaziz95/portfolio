@@ -1,10 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 
-import { FaArrowUp } from 'react-icons/fa'
 import Image from 'next/image';
 import TypedComponent from './TypedComponent';
-import { motion } from 'framer-motion';
 
 export default function HeroSection() {
 

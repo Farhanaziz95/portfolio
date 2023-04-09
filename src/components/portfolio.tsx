@@ -1,6 +1,6 @@
 'use client'
 
-import { FaCode, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 import Image from 'next/image';
 import Link from 'next/link';

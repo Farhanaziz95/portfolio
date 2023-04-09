@@ -1,4 +1,4 @@
-import PortfolioCard, { PortfolioItem, PortfolioSliderProps } from '@/components/portfolioaffi'
+import PortfolioCard, { PortfolioItem } from '@/components/portfolioaffi'
 
 import Aboutme from '@/components/aboutaffi'
 import AccordionList from '@/components/Accordionaffi'
@@ -10,12 +10,10 @@ import DarkMode from '@/components/darkmodeaffi'
 import { FaCode } from 'react-icons/fa';
 import HamburgerMenu from '@/components/mobilenavaffi'
 import HeroSection from '@/components/HeroSectionaffi'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { MdMiscellaneousServices } from 'react-icons/md'
 import NavBar from '@/components/navaffi'
 import Social from '@/components/Socialaffi'
-import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 

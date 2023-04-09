@@ -1,10 +1,7 @@
 'use client'
 
-// import { useState } from 'react'
-
 import {FaBriefcase, FaCogs, FaHandsHelping, FaHome, FaInfoCircle, FaLaptopCode} from 'react-icons/fa'
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 interface ButtonProps {
