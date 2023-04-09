@@ -12,7 +12,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-gray-900 bg-white">{children}</body>
+      <body className="dark:bg-gray-900 bg-white">
+
+        {children}
+
+        
+      </body>
     </html>
   )
 }

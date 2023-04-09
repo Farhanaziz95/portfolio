@@ -1,6 +1,7 @@
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+
 import Link from 'next/link';
 import React from 'react'
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 interface Icon {
   icon: JSX.Element;
@@ -15,19 +16,19 @@ export default function Social() {
     {
       icon: <FaFacebookSquare size={"30px"} className='dark:text-white text-black' />,
       title: 'Facebook',
-      href: 'https://www.facebook.com/',
+      href: 'https://www.facebook.com/farhanumrani95/',
       top: '40vh'
     },
     {
       icon: <FaLinkedin size={"30px"}  className='dark:text-white text-black' />,
       title: 'LinkedIn',
-      href: 'https://www.linkedin.com/',
+      href: 'https://www.linkedin.com/in/farhan-aziz-586093128/',
       top: '50vh'
     },
     {
       icon: <FaTwitterSquare className='dark:text-white text-black' size={"30px"}  />,
       title: 'Twitter',
-      href: 'https://twitter.com/',
+      href: 'https://twitter.com/FarhanAziz95',
       top: '60vh'
     },
   ];

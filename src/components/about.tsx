@@ -1,5 +1,7 @@
 import { FaCloudUploadAlt, FaLock, FaServer } from 'react-icons/fa'
 
+import Image from 'next/image'
+
 const features = [
   {
     name: 'Expertise in Next.js, Tailwind CSS, and Chakra-UI.',
@@ -43,7 +45,7 @@ export default function Aboutme() {
               </dl>
             </div>
           </div>
-          <img
+          <Image
             src="/about.jpg"
             alt="Product screenshot"
             className="dark:hue-rotate-[345] hue-rotate-15 w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"

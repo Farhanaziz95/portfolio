@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react';
-import { FaBars, FaTimes, FaBriefcase, FaCogs, FaHandsHelping, FaHome, FaInfoCircle, FaLaptopCode } from 'react-icons/fa';
+import { FaBars, FaBriefcase, FaCogs, FaHandsHelping, FaHome, FaInfoCircle, FaLaptopCode, FaTimes } from 'react-icons/fa';
+
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 interface NavButtonProps {
     href: string;
@@ -13,8 +14,6 @@ const NavButton = ({ href, icon }: NavButtonProps) => {
     return (
         <motion.a
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-black text-2xl dark:text-white my-1 mr-4 w-12 h-12 dark:bg-purple-800 bg-pink-600 rounded-full flex items-center justify-center opacity-100 hover:opacity-80"
             whileHover={{ scale: 1.2 }}
         >
@@ -25,39 +24,39 @@ const NavButton = ({ href, icon }: NavButtonProps) => {
 
 const navButtons = [
     {
-        href: "https://twitter.com/",
+        href: "#HeroSection",
         icon: (
-            <FaHome className='' />
+            <FaHome className=''/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#AboutSection",
         icon: (
-            <FaInfoCircle />
+            <FaInfoCircle/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#SkillSection",
         icon: (
-            <FaLaptopCode />
+            <FaLaptopCode/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#ServiceSection",
         icon: (
-            <FaCogs />
+            <FaCogs/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#PortfolioSection",
         icon: (
-            <FaBriefcase />
+            <FaBriefcase/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#ContantSection",
         icon: (
-            <FaHandsHelping />
+            <FaHandsHelping/>
         ),
     },
 ];

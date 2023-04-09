@@ -49,13 +49,13 @@ const buttons = [
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#ServiceSection",
         icon: (
             <FaCogs/>
         ),
     },
     {
-        href: "https://github.com/",
+        href: "#PortfolioSection",
         icon: (
             <FaBriefcase/>
         ),
