@@ -111,6 +111,13 @@ export default function Home() {
       liveDemoUrl: "",
       githubUrl: ""
     },
+    {
+      title: "Bz Tech Solutions",
+      description: "A Simple and minimalist design website using HTML, Css, JavaScript, Bootstrap",
+      imageSrc: "/portfolio/port14.png",
+      liveDemoUrl: "",
+      githubUrl: ""
+    },
     // add more items as needed
   ];
 
